@@ -8,7 +8,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF", "Custom sections"],
-    "icon": "FileText"
+    "icon": "https://i.ibb.co.com/zTHRcbzf/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["Responsive layout", "Project gallery", "Contact form", "SEO ready"],
-    "icon": "Globe"
+    "icon": "https://i.ibb.co.com/rfR67mvz/portfolio.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Application tracking", "Interview reminders", "Company notes", "Status updates"],
-    "icon": "Briefcase"
+    "icon": "https://i.ibb.co.com/9kv09q4b/job.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["Role-based writing", "Multiple tones", "Editable drafts", "Export to DOCX"],
-    "icon": "PenLine"
+    "icon": "https://i.ibb.co.com/ZRhv3kxX/cover-letter.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["200+ questions", "Answer examples", "Behavioral practice", "Confidence tips"],
-    "icon": "MessageCircle"
+    "icon": "https://i.ibb.co.com/JwfmY1QW/interview.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["Headline suggestions", "Keyword optimization", "Profile checklist", "Content tips"],
-    "icon": "UserCheck"
+    "icon": "https://i.ibb.co.com/SXRpBnsV/linkedin-profile-optimizer.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "Premium",
     "tagType": "premium",
     "features": ["Goal planning", "Skill roadmap", "Progress tracking", "Monthly review"],
-    "icon": "TrendingUp"
+    "icon": "https://i.ibb.co.com/sdPDbMM4/career-goals.png"
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "features": ["Proposal templates", "Pricing guide", "Invoice format", "Client checklist"],
-    "icon": "Rocket"
+    "icon": "https://i.ibb.co.com/M53kjGND/freelancer.png"
   }
 ]
