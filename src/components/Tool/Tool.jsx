@@ -1,5 +1,18 @@
-const Tool = ({ product }) => {
+import { toast } from "react-toast";
+
+const Tool = ({ product, cartItem, setCartItem }) => {
     // console.log(product);
+    const AddToCartHandle = (product) => {
+        console.log(cartItem);
+        const existItem = cartItem.find(item=> item.id == product.id);
+        if(existItem){
+            toast.warn("this item already exist in cart");
+            return;
+        }
+        setCartItem([...cartItem, product]);
+        const productName = product.name;
+        toast.success("Added to cart Successfully", productName);
+    }
     return (
         <div className="card max-w-95 w-fit bg-base-100 shadow rounded-xl">
             <div className="card-body h-full flex flex-col">
@@ -24,13 +37,13 @@ const Tool = ({ product }) => {
                 </div>
                 <ul className="mt-1 flex flex-col gap-2 text-xs">
                     {
-                        product.features.map(feature => <li><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg> <span>{feature}</span> </li>)
+                        product.features.map(feature => <li key={feature}><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg> <span>{feature}</span> </li>)
                     }
                     
                     
                 </ul>
                 <div className="mt-auto">
-                    <button className="btn btn-primary text-base font-medium text-white w-full rounded-full bg-linear-to-r from-[#4F39F6] to from-[#9514FA]">Buy Now</button>
+                    <button onClick={()=> AddToCartHandle(product)} className="btn btn-primary text-base font-medium text-white w-full rounded-full bg-linear-to-r from-[#4F39F6] to from-[#9514FA]">Buy Now</button>
                 </div>
             </div>
         </div>
