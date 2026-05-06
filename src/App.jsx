@@ -1,13 +1,16 @@
 import './App.css'
+import Footer from './components/Footer/Footer'
+import HeroSection from './components/HeroSection/HeroSection'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1 className='text-6xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, sint!</h1>
-        <h2>Test github commit & push</h2>
-      </div>
+      <NavBar></NavBar>
+      <HeroSection></HeroSection>
+
+      <Footer></Footer>
     </>
   )
 }

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes quickly with ready-made templates and smart formatting tools.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "Custom sections"],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build a clean personal portfolio website to showcase your skills, projects, and experience.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Responsive layout", "Project gallery", "Contact form", "SEO ready"],
+    "icon": "Globe"
+  },
+  {
+    "id": 3,
+    "name": "Job Tracker",
+    "description": "Track job applications, interview dates, company details, and follow-up reminders in one place.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Application tracking", "Interview reminders", "Company notes", "Status updates"],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 4,
+    "name": "Cover Letter Assistant",
+    "description": "Generate polished and customized cover letters for different job roles and companies.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Role-based writing", "Multiple tones", "Editable drafts", "Export to DOCX"],
+    "icon": "PenLine"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Pack",
+    "description": "Practice common interview questions and improve your answers with structured guidance.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["200+ questions", "Answer examples", "Behavioral practice", "Confidence tips"],
+    "icon": "MessageCircle"
+  },
+  {
+    "id": 6,
+    "name": "LinkedIn Profile Optimizer",
+    "description": "Improve your LinkedIn profile with better headlines, summaries, keywords, and content structure.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Headline suggestions", "Keyword optimization", "Profile checklist", "Content tips"],
+    "icon": "UserCheck"
+  },
+  {
+    "id": 7,
+    "name": "Career Growth Plan",
+    "description": "Get a structured roadmap to improve your skills, set career goals, and track progress.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Premium",
+    "tagType": "premium",
+    "features": ["Goal planning", "Skill roadmap", "Progress tracking", "Monthly review"],
+    "icon": "TrendingUp"
+  },
+  {
+    "id": 8,
+    "name": "Freelancer Starter Toolkit",
+    "description": "A complete toolkit for new freelancers to manage proposals, pricing, clients, and invoices.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Proposal templates", "Pricing guide", "Invoice format", "Client checklist"],
+    "icon": "Rocket"
+  }
+]
