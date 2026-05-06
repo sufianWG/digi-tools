@@ -13,6 +13,8 @@ const Tool = ({ product, cartItem, setCartItem }) => {
         const productName = product.name;
         toast.success("Added to cart Successfully", productName);
     }
+    const isInCard = (existID)=>  cartItem.find(item=> item.id == existID);
+
     return (
         <div className="card max-w-95 w-fit bg-base-100 shadow rounded-xl">
             <div className="card-body h-full flex flex-col">
@@ -43,7 +45,7 @@ const Tool = ({ product, cartItem, setCartItem }) => {
                     
                 </ul>
                 <div className="mt-auto">
-                    <button onClick={()=> AddToCartHandle(product)} className="btn btn-primary text-base font-medium text-white w-full rounded-full bg-linear-to-r from-[#4F39F6] to from-[#9514FA]">Buy Now</button>
+                    <button disabled={isInCard(product.id)} onClick={()=> AddToCartHandle(product)} className="btn btn-primary text-base font-medium text-white w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] disabled:bg-none disabled:opacity-70">Buy Now</button>
                 </div>
             </div>
         </div>
