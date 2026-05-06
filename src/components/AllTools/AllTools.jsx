@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import Tool from "../Tool/Tool";
+import { toast } from "react-toast";
 
 const AllTools = ({ ProductData, cartItem, setCartItem }) => {
     // console.log(ProductData);
@@ -11,6 +12,15 @@ const AllTools = ({ ProductData, cartItem, setCartItem }) => {
     const removeFromCart = (id) => {
         const filteredCart = cartItem.filter( targetItem=> targetItem.id !== id);
         setCartItem(filteredCart);
+    }
+    const orderSubmit = () => {
+        if(cartItem.length !== 0){
+            setCartItem([]);
+        }else{
+            toast.warn("Your cart is Emtpy, Please Browse & Add Product to checkout..");
+            return;
+        }
+        toast("You have submitted the order Successfully");
     }
 
     return (
@@ -38,6 +48,7 @@ const AllTools = ({ ProductData, cartItem, setCartItem }) => {
                             <h1 className="text-2xl font-bold">Your Cart</h1>
                             <div className="cart-items-parent">
                                 {
+                                    cartItem.length === 0 ? <div className="text-center text-3xl opacity-60 font-bold">Your cart is Empty</div>:
                                     cartItem.map(ci => {
                                         return (
                                             <div key={ci.id} className="ci-parent flex justify-between p-6">
@@ -58,10 +69,13 @@ const AllTools = ({ ProductData, cartItem, setCartItem }) => {
                                     })
                                 }
                             </div>
-                            <div className="cart-total-amount">
+                            {
+                                cartItem.length !== 0 ?
+                                <div className="cart-total-amount">
                                 <h1>${total}</h1>
-                            </div>
-                            <button className="btn btn-primary text-base font-medium w-full text-white rounded-full bg-linear-to-r from-[#4F39F6] to from-[#9514FA]">Proceed to Checkout</button>
+                            </div> : ""
+                            }
+                            <button className="btn btn-primary text-base font-medium w-full text-white rounded-full bg-linear-to-r from-[#4F39F6] to from-[#9514FA]" onClick={()=> orderSubmit()}>Proceed to Checkout</button>
                         </div>
                     </div>
                 }
